@@ -8,11 +8,17 @@
     <meta name="Keywords" content="Felipe Alenjandro Manzor Manzor CV, Perfil, Profile">
     <meta name="Description" content="Profesional TI, Tecnologias de la información, CV">
     <link rel='stylesheet' href='estilos.css'>
-    <script></script>
+    <script src="java.js" type="text/javascript"></script> 
+    <script src="sticksy.min.js" type="text/javascript"></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Space+Mono&display=swap"
         rel="stylesheet">
+    <script>
+        var nav = document.querySelector('nav');
+var nav = document.querySelector('nav');
+Stickyfill.add(nav);
+    </script>
 </head>
 <title> Curso Resumen Data Analitics</title>
 
@@ -30,11 +36,11 @@
                     <a href="#Introducción">Introducción</a>
                     <a href="#Conceptos-Basicos">Conceptos Basicos</a>
                     <ul>
-                        <li><a href="#">Computadores e Informatica</a></li>
-                        <li><a href="#">Electronica y Hardware</a></li>
-                        <li><a href="#">Lenguaje de Programacion</a></li>
-                        <li><a href="#">Información</a></li>
-                        <li><a href="#">Redes</a></li>
+                        <li><a href="#Computadores">Computadores e Informatica</a></li>
+                        <li><a href="#Electronica">Electronica y Hardware</a></li>
+                        <li><a href="#Lenguaje">Lenguaje de Programacion</a></li>
+                        <li><a href="#Información">Información</a></li>
+                        <li><a href="#Redes">Redes</a></li>
                     </ul>
                     <a href="#Flujo-de-datos">Flujo de datos en una empresa estandar</a>
                     <a href="#Proceso-de-desarollo">Proceso de desarollo</a>
@@ -43,9 +49,9 @@
                     <a href="#Datos">Datos y Data Analitics</a>
                     <a href="#futuro">Que viene para el futuro y como nos preparamos</a>
                     <ul>
-                        <li><a href="#">Data Analitics</a></li>
-                        <li><a href="#">Mundo Ti en general</a></li>
-                        <li><a href="#">Ciberseguridad</a></li>
+                        <li><a href="#Data">Data Analitics</a></li>
+                        <li><a href="#Mundo">Mundo Ti en general</a></li>
+                        <li><a href="#Ciberseguridad">Ciberseguridad</a></li>
                     </ul>
 
                     <ul>
@@ -53,17 +59,11 @@
                         <li><a href="#">Que viene para el futuro y como nos preparamos</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">Data Analitics</a></li>
-                        <li><a href="#">Mundo Ti en general</a></li>
-                        <li><a href="#">Ciberseguridad</a></li>
+                        <li><a href="#Analitics">Data Analitics</a></li>
+                        <li><a href="#general">Mundo Ti en general</a></li>
+                        <li><a href="#CiberseguridadE">Ciberseguridad</a></li>
                     </ul>
                     <a href="#Recomendaciones">Recomendaciones para Aprender</a>
-                    <ul>
-                        <li><a href="#">Data Analitics</a></li>
-                            <li><a href="#">SQL</a></li>
-                                <li><a href="#">PowerBi</a></li>
-                                    <li><a href="#">computacion general</a></li>
-                    </ul>
                     </ul>
                 </nav>
 
@@ -83,7 +83,7 @@
             </section>
             <section id="Conceptos-Basicos">
                 <h1>Conceptos Basicos</h1>
-                <h2>Computadores e Informatica</h2>
+                <h2 id="Computadores">Computadores e Informatica</h2>
                 <p>La informática es la ciencia que se encarga del estudio de la teoría, la aplicación y la tecnología
                     de la información y los sistemas de procesamiento de datos. Los computadores son una de las
                     herramientas más importantes que se utilizan en informática y son dispositivos electrónicos que
@@ -101,7 +101,7 @@
                 <img title='PrimerosComputadoresDeCinta' src="res\PrimerosComputadoresCinta.jpg">
                 <img title='PrimerosComputadoresUsoIndustrial' src="res\PrimerosComputadoresUsoIndustrial.jpg">
                     </div>
-                <h2>Electronica y Hardware</h2>
+                <h2 id="Electronica">Electronica y Hardware</h2>
                 <p>La electrónica es una disciplina que se encarga del estudio y aplicación de la electricidad y el
                     magnetismo. Los computadores son dispositivos electrónicos que utilizan componentes electrónicos,
                     como circuitos integrados, transistores y diodos, para recibir, procesar y almacenar datos. Por
@@ -138,7 +138,7 @@
                 <br>
                 <img title="Permisos1" src="res\Permisos1.jpg">
                 <img title="Permisos2" src="res\Permisos2.png">
-                <h2>Lenguaje de Programacion</h2>
+                <h2 id="Lenguaje">Lenguaje de Programacion</h2>
                 <p>Un lenguaje de programación se comunica con un circuito a través de un conjunto de instrucciones que
                     se envían al circuito para que éste las ejecute. Estas instrucciones se escriben en el lenguaje de
                     programación y se traducen a un lenguaje que pueda ser entendido por el circuito. Por ejemplo, si
@@ -160,7 +160,7 @@
                     y C++, mientras que algunos ejemplos de lenguajes de programación de bajo nivel son Assembly</p>
                 <img title="Ensamblador" src="res\EnsambladorARM.png">
                 <img title="JavaScript" src="res\JavaScript.png">
-                <h2>Información</h2>
+                <h2 id="Información">Información</h2>
                 <p>La información es un conjunto de datos que poseen relevancia o significado para un observador. Puede
                     ser cualquier cosa, desde un hecho simple y concreto hasta un concepto abstracto. La información es
                     un recurso valioso en nuestra vida cotidiana, ya que nos permite tomar decisiones informadas y
@@ -173,7 +173,9 @@
                     decisiones equivocadas o adquirir conocimientos erróneos. Por lo tanto, es importante asegurarse de
                     que la información que se recibe es de calidad.</p>
                 <h3>Datos->Informacion->Conocimiento->Sabidoria</h3>
-                <h2>Redes</h2>
+                <img src="https://akifrases.com/frases-imagenes/frase-la-tecnologia-es-solo-una-herramienta-la-gente-usa-las-herramientas-para-mejorar-sus-vidas-tom-clancy-201118.jpg" alt="TomClancy">
+                <h2 id="Redes">Redes</h2>
+                
                 <p>Una red computacional es un sistema de interconexión de dispositivos informáticos, que permite que
                     estos dispositivos compartan información y recursos entre sí. Las redes computacionales pueden
                     variar en tamaño y complejidad, desde una red local que conecta una pequeña cantidad de dispositivos
@@ -192,6 +194,7 @@
                     que estos dispositivos compartan información y recursos de manera eficiente. Para hacer esto, se
                     utilizan una serie de protocolos que establecen las reglas y estándares que se deben seguir para que
                     los dispositivos puedan comunicarse entre sí a través de la red.</p>
+                <img title="EstacionStarlink" src="res\estacion-base-starlink.webp">
                 <p>Algunos de los protocolos más importantes utilizados en internet son el Protocolo de Internet (IP),
                     el Protocolo de Transmisión de Hipertexto (HTTP) y el Protocolo de Transferencia de Correo
                     Electrónico (SMTP). El Protocolo de Internet (IP) es el protocolo principal que se utiliza para
@@ -205,7 +208,7 @@
                     Servicio (SDP), que se utiliza para permitir que los dispositivos descubran y se conecten a
                     servicios en la red. En general, los protocolos de red son esenciales para el funcionamiento de
                     internet y la comunicación entre dispositivos en la red.</p>
-                <img title="EstacionStarlink" src="res\estacion-base-starlink.webp">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-sP7X_BGLaPc%2FXEy2XYDYLJI%2FAAAAAAAAQSM%2Fd5Vv2R8wusI-_lmZIp05HUNUA3Wdlt-4ACLcBGAs%2Fs1600%2FSuite_de_Protocolos_TCPIP.png&f=1&nofb=1&ipt=3efd401dee0d5e21d38f7e4fe7d4b67ba05a4c868ed86dfed44712eadb3fa6f0&ipo=images" alt="Protocolos">
 
             </section>
             <section id="Flujo-de-datos">
@@ -222,7 +225,7 @@
                     sistemas en el sector público de Estados Unidos.</p>
                 <img title="Arquitectura" src="res\Arquitectura0.jpg">
                 <img title="Arquitectura0" src="res\Arquitectura.gif">
-                <h2>Arqitectura de Red</h2>
+                <h2>Arquitectura de Red</h2>
                 <p>los medelos de arquitectura son principalmente punto a punto, estrella, red en malla, modelo de
                     anillo, red, arbol, red en torre, bus etc..., en la mayor parte de los casos se combinan</p>
                 <img title="ModeloEstrella" src="res\ModeloEstrella.gif">
@@ -232,6 +235,7 @@
                     con un servidor central para acceder a recursos o servicios. En este modelo, el servidor es el
                     encargado de proporcionar información o servicios a los clientes, que son los dispositivos que
                     solicitan estos recursos.</p>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.slidesharecdn.com%2Fexposicinclienteservidor-100128064123-phpapp01%2F95%2Fexposicin-cliente-servidor-6-728.jpg%3Fcb%3D1264661359&f=1&nofb=1&ipt=fe9cdbfee7e6d6d408df0f9181eaae1d69bc23ad78052e7b58ee174d363a15dd&ipo=images" alt="Modelo Cliente Servidor">
                 <p>Por ejemplo, cuando un usuario accede a un sitio web a través de su navegador web, el navegador actúa
                     como cliente y se comunica con el servidor web que aloja el sitio para solicitar la página web. El
                     servidor envía la página web al navegador, que la muestra al usuario.</p>
@@ -325,6 +329,7 @@
                         equipo en lugar de en disco, lo que les permite un acceso y un rendimiento mucho más rápidos que
                         otros tipos de bases de datos.</li>
                 </ul>
+                <img src="https://rodolfoarnaldo.files.wordpress.com/2015/10/1401269083847.jpg" alt="Tipos de BBDD">
                 <p>Los gestores de bases de datos son programas que se encargan de administrar y gestionar las bases de
                     datos, permitiendo almacenar, recuperar y actualizar los datos de manera eficiente y segura. Algunos
                     de los gestores de bases de datos más utilizados son:</p>
@@ -340,9 +345,10 @@
                     <li>PostgreSQL: es un gestor de bases de datos relacionales libre y de código abierto, que ofrece un
                         alto rendimiento y una amplia gama de características avanzadas.
                 </ul>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Frevistadigital.inesem.es%2Finformatica-y-tics%2Ffiles%2F2016%2F01%2Fportada.jpg&f=1&nofb=1&ipt=66be25c2d261c165c8b47b163c755dbabf5aa705a8539c0e50580c22c8101260&ipo=images" alt="GestoresBBDD">
                 <h3>Finalmente todo se reduce a archivos que quedan almacenados en un computador gigante llamado
                     servidor</h3>
-                <h3>Intentemos entender un modelo de datos</h3>
+                <h3>Intentemos entender un modelo de datos... (Ver paginas internas)</h3>
             </section>
             <section id="Proceso-de-desarollo">
                 <h1>Proceso de desarollo</h1>
@@ -387,15 +393,21 @@
                     dispositivos personales, entre otros.</p>
                 <p></p>
                 <p>Como andamos por casa</p>
+                <p>https://haveibeenpwned.com/ revisar que paginas obtenemos bbdd</p>
                 <p>https://sitereport.netcraft.com/</p>
                 <p>https://builtwith.com</p>
                 <p>https://whatcms.org</p>
+                <div>
+                <img src="res\onion1.png" alt="onion1">
+                <img src="res\onion2.png" alt="onion2">
+                </div>
                 <h2>Principios Basicos</h2>
                 <h3>Criptografia</h3>
                 <p>La criptografía es la ciencia que se encarga del estudio de los métodos para proteger la información
                     mediante el uso de códigos y algoritmos matemáticos. En otras palabras, la criptografía es la
                     técnica utilizada para cifrar y descifrar mensajes para que solo puedan ser leídos por las personas
                     autorizadas.</p>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F_M52ukk48Qag%2FS89ZE8ZjmHI%2FAAAAAAAAAFI%2FmmvwKfrehcg%2Fs1600%2FDibujo.bmp&f=1&nofb=1&ipt=858b687daafa04eb8340e4e0474c02e40434a61a5145cd13d22d157433c1b603&ipo=images" alt="criptografia">
                 <p>Algunos Metodos Criptograficos son:</p>
                 <ul>
                     <li>Cifrado simétrico: Norman quiere enviar un mensaje confidencial a Camila. Ambos acuerdan
@@ -436,6 +448,7 @@
                     utilizarse en conjunción con otros tipos de ataques, como el phishing o el escaneo, para facilitar
                     la ejecución de la acción maliciosa.</p>
                 <h3>Otros Aspectos</h3>
+            <p>Explicar por que todo sistema es vulnerable, relacion con la electronica</p>
             </section>
             <section id="Conectando">
                 <h1>Conectando Todo lo Aprendido</h1>
@@ -480,6 +493,7 @@
                         utilizan en aplicaciones web de bajo nivel de complejidad.</li>
                 </ul>
                 <h3>Veamos algunos ejercicios Practicos! (Explicar DOM y comando extract)</h3>
+                <img src="https://flylib.com/books/2/54/1/html/2/images/figure6_16.jpg" alt="Dom">
             </section>
             <section id="Datos">
                 <h1>Datos y Data Analitics</h1>
@@ -488,16 +502,26 @@
                     eficiente.</p>
                 <h2>Principios Basicos</h2>
                 <h3>Modelos de datos para el analisis</h3>
-                <p>Modelo relacional,Modelo de objetos,Modelo jerárquico,Modelo de red, tiene relacion a como
-                    estructuramos la data para analizar, y nos habilita que herramientas utilizar</p>
+                    <p>Modelo relacional,Modelo de objetos,Modelo jerárquico,Modelo de red, tiene relacion a como
+                        estructuramos la data para analizar, y nos habilita que herramientas utilizar</p>
                 <h4>Modelamiento de datos</h4>
                 <p>Explicar modelo BigO</p>
+                <img src="https://cdn-media-1.freecodecamp.org/images/1*KfZYFUT2OKfjekJlCeYvuQ.jpeg" alt="Big O">
                 <p>Diagramas Entidad-Relación</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASgAAACqCAMAAAAp1iJMAAAAwFBMVEX///+bm5sAAACurq7Pz8/5+fn39/fDw8P8/PyoqKjx8fHr6+ujo6O4uLhcXFzw8PDe3t7Y2Njk5ORiYmJ2dnbJycl9fX28vLzu7OJOTk6MjIy1tbVGRkbLy8tUVFScnJxpaWmPj48kJCQ8PDwcHByEhIR6enpxcXHt6+H39epJSUlAQEA1NTUrKyvIxr3j4dahoJe4tq2VlI0XFxfa2M56eXJlZF6urKPc2s+amZGJh4BbWlXOzcNwb2hfXlmMi4Sp6dZzAAAfcUlEQVR4nO1dCZuaOhcOJuwgSRCiINvMRUedtXunve3//1dfwiaOoM6I037Pc9+2VkW2l+RsOTkBaQj/73E3OgBrkFNkIAH/99BG124f4hEe5BwESIMc5zXwpCBBQx5QHum928iIDHIO9O5EGfPZ1/vH21Qb7pDyyOrdJogyVZvIZ57j3YkyZvcrga/ucMcURGmaUn1yxFmabWjE0n+/Pz7HwXnneHei8vvV9P77w3T1CAc7piDKDAg0bWQSAhmF0FZVDJRQ4URdfyqezNP4rHNcgCiFt3JNVnq2jm+m0+ln/vKwHOyMBVEpgYEqZQsoLSTG/5uogKaEE/VtOv35czpdfbfPOcfwRNEoU5Bvhz2b3Qd+3fecrJ/+YKcURCk0ohiaKqHYpmEYJypSPegAdLe6mX57mvKXxTnnGJ4ogiUHJ1Jfx2KfV1OB1Y9h1LZAhzA3NSBTIa3QiJ/v/gM/4/1Zdzo8UQaihqE5Xt92/cvPm+nN/Y/eH7weh7QeGj0XT2Z1c230/ugEnEiUtFnP1xzz7X/1m/nkpBOxTCqRTAp7OU+kBuY5dwBeEJWwJcq2tgcaLX7dPzz8/D4/z546SlR5yvnonz6MRnsmCrlie8eZoQZEoPUx65Nnp2KHKN1merpVJWiEzcnd3QyeaUgdJoosxu44oJyoFMjdANJIkTUNaNtrg3Hk7pnKB5Rzr+A/FTtEYcXGrN2ieEuSzzU3jxBlffnE+/b9jwzM+3V5MoqwH4IMV01bm2T8VUrra/OYgy0Uuf2WeDgoUS+A3sGFUf/lYpBbIatnNjtA1EfbtBbAomrxkc5LKY3mpVZTGKIkk9j4okT9WV/vjpP0JBTrQxofalEEayYjERWf4Nqpvjfi4uq1kNm26dmXbVFuSzXswr88UfI/3DZ8fOZs3bgHidJAszVte1SSK7hTuD6gErhkiwLXh+JR9NyjFzjUooLHFTd4eNd7ymqiTMNUKKYmoMyslLogqnJwSdXtQGVLonVFAQ4aovj+XAWYjuMotVVwPlFb4GW6vErT8aBhHIGDwnz8JLzJ6deZti6J0iQrg3oipZKX2ZUATUbj8T/umGM2qm+9ERmztdgwjm/d6/ILRVJhFrEshGmSV4pyMKI8HWmYoPO83x4cJErLr58fP99mSq31tCVkkR9C38uhnpc/SrgdVbYoTZ/Xt14awXJe+XOtFpUz31uqdpRlbFLxOhRRGpNyzfDY+xPFN0uBJfpRTZTKLSYlpAZwNKUiRRBVXxqblfdekuKMa7+3RZSiGcDQNGGC1S7FYC0q9BJVtdR4oMPt4EQX5qAdJWtNEI7O1WaDt27c3hZRHRiMKH4+wjXLLB/oeG0MQhRoGb6TWu9lyxY18rsQJWCMIWDrYTRdG8MQ1QacCUtKiV/YgO9ElF7Yueb6rCBdF4Yninc/BtDty2jTJX29BspYqnXG+tyQxAucStSMhd1gy/3oQX69z2tstuG031vnEaVwl1cphhNQK5TSlpZD4ESi3AOW791+p3L2jyAtWvD/8VufJufFOm0SmgsUYpCkO4H6BZeWwzWrE4mSzX70DSMcwpCmDjQSR1+q6rKygOW6gYZjx4KhCkOm2kg/k7OhQ8EmBeBI8Ee1LOvWSpK3ENwFRiCmJGL/VOc1s5qT24jZkEBLTXQ1+MuIUvXEtixoJ0zv9NqRSgn3X+Yois4PppXQqlcyrxw8VB4Zz6Nyq/iBdu7A9NBEURmZJMIUkahDUHEvIws0z4QX8TJkt51wEsZnDSa8xC5RRFrk9lBPuhMQQU9Xw4sQBYDl1v3ZXGZHZUA3tHA5drO9jtomSnY/33/7+Ti/5CC7Kf5qgwrzNshtaefaM0KXsx+z9NXhFnb3+CBG017GTFtEmdf3q6n48/vi6QjZ1cWysopg/SIH+pdvq9Xq278HPIIukB+r1fRmOl39+8IMaxEV/F5NHz6LUfofQymkbpgzyDvJoBKkBbT2YhUkX/j9inv5+roslsWn6fThA3+5Ge0y3CIqfeK/eb6f3qw+D+9TtqDG4vBkNngQ0iQqgBjhf3j/jsUNf37gTO0FXQ42sZTvMn0U+412W0uLqPzDavrp+enSLUqthrbp3TBR/9aRTR3kGSNCAMb8Xh9+iyGkHy9/5qlYxrjHwQnup9NPX3hT/Ha7u6FFFL39VOZPPJ6Zc3UQ2aTWRcb+KOl5UGlOdVgSNfm+mn77ejNdfUpf/syWckpQ0N0YzLkQbdPVw/qFX9XWeob7/dPNw9Ov4XlqWruIFm0hpYP2cYfKRKMqmmGMSRnvXz3d7Z0CIh2retZjO9D489On++/xy+aOQKKpdgnGltzH3Vj1Z45wkDtRrJDihKmAbcrn5FSXgWYMYe79ywoxhjHfNEtKbiUp4w3g1/ev37908EFbr813pAGGy3EqEdx8Uf4SAcs6NCjWafAoOALc+D5Zb2HIzydJtt5oEli/uVvkgS7plgTPMRikeFzDddM7kTY9TuOPo1GcjjviwrRp4XL5Yh6iYFTcZ0GUqjidMJRZJ1EEWwbM2ckZToqEEHUIA7CK0ZIq24WMoSZCUw416DlOa9r/zOQxYDalurVNsLFmcdWesJ0xkGFkjhLSA+yOCl+sIKpfUceCKI+YCqUt4YZRgD3GTtfvtd/KTah2jNYan5t15yiaDBTlAFHaGPD2TLNlWDUjLZWAGZeXgTwp4RaFao7285RqTE4mymBWRjFqSWGtePpvCkSBvOkKcnq+BxAyKTKhepgoG6mq41VPSF0XdxssxT1QpFCVIGyO+mPsryGKSciDQwW2rcoClK/7n+LJCL1A1aB3wMznRClFuy0bVHJbdXH7Y6uvC6LwZCtKPAZM2QYFL6cTBWxF80wz2tkgZa+5nx2EsbhEPBsiidPm1zULj7Qouk0H3rbnKlwl4ERFi7JYJFmQ3xezAgwkdWGzzO4iqlKkO3ozds3U3W9LiquH465400mgay7Wxe6Kc7z3KoRSIP71gnvBLaI0BewcVBBVD1jTWbsRy8uq6+PcEETpOEgsnxvBlqXLQCUhtBjsIEpOSUIgYgsPQcYqcuLZHKp3mbr79NGGiCfy9iaR32Yig/HHlx/jYwNwRF1A05L3s7EVTEu4xBxXRDHscD0TMZNJllrypcUOmpSjPfWAP4gqHQJdMRzkeD4RRCkmYo5sWgk1tSghjqwoYlrBfouSrMxyMwNaE8uiVRON5+7GHSVw0+rQcuoWjU+buG/2CXmPHn+fcsv55veRCQxE9Swzx/tELZZ5geDWD24rUiQrkkIrWGQEMqlshNptvrz2lxyTRsSodWdYrsWGdDN5ldYjDqLIJJx7YjrVMWMXhBYnabElimwakYY2b40AjEH2VCXmfz/s8ZVZVB1W1qK+223X0yA3bUMvDCnENqy+c4FZdT3NrfpadbDaVqGZstV6juVgs63RXyHMxa+bC7XazejVGl7h5hjmDswYjDlJn+6fRDrfkX3obNZljDbPzlJ2DU55J44itF7jt+1cvDqvzc7c2RJlrFXes5ZbSl5JVPX4tJqZWrrqr+t+HrVAIIXKuJg89PNJhMCOEMVi01x39IxWIz9kmWs7vgVZ16pOCyY1oZrSsqMMKQyJlW4t4VcStZkJxM0BG6HhjdbzF4j7uVPphEKfcaKCuus9Hu56WSpe3X1X6k1EAaWaaEF3Mq5fGpyGtT3464gyq0kG6qyiGlfPmMZszzs6EDyhBKuKHAEXKONyguNTfChsoAV+qTj0PZvybUQBuUhHQrvx1dNdGK0TW6Ia1AGlqtnaXeLDPxybIRPfv1v47vWv5w/PP/JDPEW3jQ1H1i8e5w5RBw6y1xa9ObV2sxROJupVYZZ2gpjfmdt2hChgOEbsGCbQMMEHA9hSmwDZ3VUcbaLcPGgha38IZnuHdeKXEx3o6Gpz3Y3NxzKFF4HEsJJ+dPTKaFPRr151B573iXJijcazCPhxrJhxrAKXv1HimAF1FptaHE86CFPGlfQilSaxxu2G47eIMnADSs25MEObL3abfPeT0YJlP3KtJOr1LryRF0ZivuhpDi2iFNFJFa6ATzgspopBHL+JwY1qfRHVTwuOxltsOuWS4qfLf5ap22Pwa9w9YZYFoe5Zrwvevi33gJsgzqzX+dgSJTNJZpaN5GMDLszgv1UpcXW3aTWKW/UQXCmQ5JAoavZSNN5Ylb5fUmFTI4wIQq9zK96YpMH7T39EckuU40GqZux47tuC78JsxuwdsbSTGdbwdhTNSN6ApRXeRJSGKO9P/TZFq+sxomKZYHosID6hQI2AmDWyI4fQVdNs8fXJ7hInitiZCiQyYB7nm2RUAlnEdLXPeNmRUTJg6LiMwnLRqDjcnU6D48o+2LMODoATpbKFBCB9oytKvf2Bk7cQpcBIhR6y+p7XC61neSIhv8ChvuB3EcVVRuHRLl6TqiCI8hBEmfqmkDybff7++9fyxQkvUUljsUuU7tUM6ZJFuEvsEEyQjBzRh6uzBybIu4kC6to0N6/K8I2FSBcZt85bhFT+WYR/Vj8/7oZ0L0GUtY7buN3EVThGSsLQTSzJ4oxJSwp0XM/DyjfxVbnX/gRIc71+XebLWXNh2A/ug/78xr3Q+c73byNK4b0fm+Q0BatHoIoD8j7IEo+oxFOptUQmsnBecgCVHQPyPJxF1OJhOr15FglDuzk9baIUafxjnJ4S4EXYcvTcO01fh53CXOYe9g413bQbtqMYMnUM43Sz5yhRkaqIub2d20Q6y8Pvp+nN6svO5bWIgtdPN6vpt+fFcbOOkJx6UD25Xo9yzODs1aCmlHFjGgbwFaW5jhFlqB5Fed7tB+PRQ1l542k3TrYlCv/gje7bzXT1eDzBUqbc4XjjCGgnFn3+hKY4BjEVU1GGa1GyDSNi9k1VInPRXh6ex7vPbktUJtrcv/zlZn3CQBS93rzCV3KOaa1eot6Co12vtBrKVo4olj3Sbq40/vL7ef4y92lL1FLkqH14FFLsuPkRxkY9fn8Q1ASOQeVTDM7hcIowrx+Mopqq4lvZeFs+ME1nt9fucvu5+OGWKP3ranrzVXS/22OtXFsWfAedQf82DNWSWcAimgLTtg3uzqnAsW2HuxgqMJht8jcMKLY9aJbicaKM8bqqcyMzYjESLvtil5pWzTRE2/KS88ciNvvQFcnfQXhbKQwxM+8gHDVDTBcZZAqxLGroFjSwZWH5WocKvdV5q7d0h1oWU4wtjt7nERzXehvMVVeTUMYlTX7gSdVEZWY14oqX88f7p+c7tf6CduYs8ea07Sf+kSpfRMMG93UNRZbFhGutmHWtySDGjNkzlYUG0OSi1NsWZ+uIY0QFRThNmbWUtnRAp9ZEHUw2298fr3cMLfWk6btKy9ymotuOCYRwE0Kdcn2mOTsP5BUWUzcOE2XENUHZsnniJxE1V/sAR422ItVXulupRFp1P9PVe/dvwFjroKmnehuxqzBU1DCLTAjbbF+WKNhK943KMSUlO42ofrPJ5EQJEwY4zi3UBeCi1l+1GaL5frnpEBJr+z4b89+LB1AUAbA9nWEJtkXEJYkyUqmtXx1XtC4lfUnUjr+5JapXNVNOlAcTVfZxk54epPVJqsOc4iu2b53WFkpBFDIB4sZf+xLOJmpm9MGpw1uotjZjXVHMFGSoyL0wCDEINamQ20QmJsXKyUSFUcCARa+aL8N2EJiuTwqAtHOjG5tK6xlLP5uoIO1DXJ/SbvyRj9yCukrvCDASZmeJyJBys8TPJT/DyyzDJxOFsIO5hLlufTtrsu3sEyfNt4mi9d4XI+oA2KwyCuoMKeGoaEsgPEkLWQgT1WUM2UxFahQyD/YRtXuNdARhpeN2+n1ZAwKYXTncnejMtv8TRAFz0/JNKsPZcNsyau/Rt4miCFGCKWEWYo6KM8ypjQRRt/oyKMyq3SgWFSFHe3ayPf33EMVFR+PK4k2luZ0TtZ4MJMoVk2WptpVAy/d1S89wJoi6DtK73Od4OYziB93D6d34m4hqqvDBeOv8n0oUUm3EIqLovGUhy2MqI6YuiOIeYo9Bab8mjP1XEVXWdXQm7bzmU4nqAR0NVKf27yJKZLnC3Yok0gEp4p6m9Tph0Jdy/zC6p079OaIASnc/S27eQtD+kF+dQVQkQdW2T58M85IomaIo8kSVCLRvX7wHUS9Bm4l3jLtbMeSvzTclB28jiiIVYTV8I1FysvZj3bLE33i+V8Lm8kR5TOSod58Gc7F8N07HL4ceOFH9yaZOH1GvhUGrgjdYJIOLgFdtl8UAT8qLMpvfXLRChQBVA5js14AATGKi0LDIUdsbXeREfZz1YT4UUQ1mslTGBaXyyEyMeDnBXDJAOnBlrIPQOof3bThxSMR2kvlqIDBzx71wB57Xr8T1bBSjbMdVArGsxvmlimu8AjaldqTaPUS930pD1I+lJtbgC9EUbo1W63Y59PT+V0Or/nYT9V7LnZh+ypkY1200F0Hkj9tIcqxQf+wNmfr1dvxRovJ10WDouvzIctcAalCXhwW+6JJOcHVqVt1F8QeJUmOpGlyxCoddWSu6DZYULEuZFVZzrGg+Hlp/vAF/iihNX2dbo0VE3bUYA2VsCPntsnatXP5emsE/3QG7EmvegSh9vhPpBXiWXAsfMogLg3XJpNmOctXgRnrz7NIh4Nx1CICLE2XN95MhNu5YQoq5FtM4YTran56sjt3BawGdDDY3rb28v0sTpXfQBDIItChLx+N47AbMAG5HjMLM4wEmsb8BjivEANmbsnlJopx83ZVaY+8tWhV3NR8j+RPCSi2VM1DSfNcXvBxRTtDdfci+Ca7FnRehwTgYboGrA+A+u1zWZ29NWwnXOwbwpYiSg7g79U8pM1eLQfatIMh77Kdo6V7eXqdIcnQ9sYEza/eAZtJSgQsRheKeQlYgL7OqbIyJigiult3Regcq2Dq7tApEZmiwPAmNeni0UsKKmJtYz364CFHhOO+7OViNFtlMD6GdMVgX+O0f0vHGxyYAngnqQYxpBD9Wl2Bm9bW4CbA9KxTrcFyAKDi3etvAvoCqZYIy7xdHJHUvqgKra4jqS2CVFyHKzFGqEuJdgCi4OTCZ2rzu12PK5oDgNq2NdXkVaOyU9TfaCVRDExXOD805p6NDwTnlcKqVHWeXD6a3ZsFZ896E/LOBbtNDm/GBtbgErMMBVXX+ihlWbwWqRkedWNptwQMSpS2WdHLgaLpL87S/UciTTPMPlBDKfVGe4uL9T5mIPDzvZXXJAYnCsWgP+/UJ6gsoihChdZ9ywzOxe2+91ypZ2zpzgcpT4M2wNLmcr0fvylsM552NRhuXIWfcU8+13t2862QK3Va9Et9d3lYno45lTYcialspoilU38a22JQx7hJU292VtCOIL21HOXZLnl4Giw4BMBBRk1Zqi5wGLxuuNWt1SKleb17DSFMwxsCZtzNjmvIGBCvcakYvF+PJ0iGu+BDKCCeZxPG4MUrOIkrjllgxP76aoWlq5aMIr4v+hXEEEEUane82EnRbdj+CE8fzIYuud60GUm7XmIqpLzH1pSmKXjMN5y0QRMmzfz+tVjdPt9W5ziKKImjYOXOvyvai+M3EtI+i+0ETOlauwrs9qXVbODKY5Ah50L97uVkr8ts1O2RUTdh8r68FZy32fRyCqPR+NX0Qkxyvysd0FlFmlBEvYnZQan0580pPw1kUQUuIcuqFDOcvu6LklgUfi4elmdaLwg917m55hRQEu7L19AIIr0VRoktTBFHGr9XN9LuYQvVYioXzZFRxp4rCBXhbl7F53ROr1/C6HXJx9m4U7cRB922YnekRr5nY/0rYjFApK0aKzX/FWvW/b6bTp/IxDSTMW09Zy/dzFptKjuKMHXECJdgGzKTlfpKGGQf19pcVjYZESDxsuWXuwUxUTBNTi6skgMHsqGY92e4Mfb/uPupdp0Va13sFi71AcYEsLf7TmvkAl0AYsVDxwoIo9eqhqAD/obqe4SxzqXjUZl9tm8pkl/oaRJkB3i9/itRUur7oUIhS5R74Qnmrs+en+8cf9fMf0NdDGw+wTW98AG8QcMb9clhU/NNv+z0UukHslEm8ZwJOFv71ciF8GBzqavNYh4weKJNNd78poS2Xe8sT7iC/PXwt48tZBdnV1d3VncA/Hz9+HPF//O0th/iqUB7DxqOOTCncr6K2iyMpUvrloizzMpu+C24ZHBqWKHGnmmlyi8HsEtkFEaapGS+mMlYQBQ41TAB1uotFWMLIINzl8fDQlM3T3k3oUkRRJAGUhV1BbrFZUXWFJZ1FBwRRFOkAZqyzJoElHGtoqmCpD7kOrcC8P5HVuxRRhGSmCmGX8hObHU8nNpP6iZJQCA8QFSLLQ4NVoa/xJ4hSPCfEgHapr6LrMSOivF317U4AkQHutLUKGWXWfwfFuxKFMZ7Rl+UcGyiMcdeGsV69pyjGWFOUvlgvSqzUt6zBFsTcxZaoveMPRFRVG5fDi2fxKJ6tfVJ/I1yRZklVLEnSbSJJrFl5V2w2mt3Vq6ur0dXVx7TZ3RA5Lc2si3Qzv7qdzzd+882QlAmiTKqYppoQhZoYK1jhbVuhgxHlZvzmC4h5bDr/Z1VfJGLQUt0sJhUqbdt8TkU2YpDv7V5/XvALYxndFiKtqjPUn5dDxoQFUYm+zDI18JIMZpI9hkmmSktlMKIOrPzNieqWygXkgqj+EByRxNKr/WceNNFFEJVBxjwTSV5EELEzD3uWiK+dS1RF0IFy5gVR/QFuoyDqwDj6EaLyoYnqEa5nESUn41+/XLF2z7sQ5XD7VKGln9coxMGJ6sE5RJkzURXo4fsGvwNRkpi/qzOdiwwVICkMJWhnVkkU1jOJnV30BlyKKGdTrli4+ra+PFFKGiQs9AIb2r4JmGRLFswXrCBq+eXp5/3jZgDr8zJE2SKe/PBQLBbaCi8VJmYVBxGm4S5RmgHk6rdlrHxLFBa1m8R3ci3axRT5ukV5lEtYhzomsbCNVGyqlBC+W06l5+mqeFznjx5fxteTfvPrE+tKrB6RIMrinl2iJhLSQzaxKKBSUYe0IUqzUGhJIQ4lCSFgWLg4ZU0UsnydSUkQSEECl1JgAG6VWp3CXG5PkAzUL+WqDdObY1GJ47hM9MDbrKY3Dw8309UvQxAlBRLWA24ALTlDOgOR7YiU2oYoJ11axIY+tIjExYwq7xCFfUsnrpXkoeslKePfQNVbap1ar+1pZ75YAuTr15ub1Zez43n5VS/uroqRkTcJc72sEvvwr1TIqNCRAW9HiukoYvUdC1EFt4nSIkoocajhIJvACFG1MMorojSNmxoy/6NknuiDnkRl0Un3iNIy2v4YSI+r6cPTT/68Zu8xXftN5gFbP3/9+lmkzL9WmGtNSfZX21GcqPYklQBvqoqZX19RquLNeKPBqRG7dG/fzeBULKjITktG5ZTOv367ufn5+cjqV8PgbBfmT1rmMlymqf8+s2b+cqIOpPi8z6SGBmcT1T/3/ohTrBREkXa9xDY0lHGiFirrgXr2Qquvw7lE5XHvFHcxQcm73pYDW06Wk8my+egKoli7oqpY6m77UUwFdeABXLw8wg4uPV9PqSErUjybxQl/U+FFgMawFsvgz0w9OwXvNvnanH+9Wa1uvs57ohnWj/uHm0+Pmz8+p78H70ZUXDnSn7oHSdnncvPNiVXz3h3vRRR55m7Pp3tuRn/ubDNiXULhFU2f3qsOwyvxXkShD5yop8eH6ep3p90TF372p+n003uY2W/AexElz26mN4Wr372eY/ptOv0m6vN/vXx29JvwbjIqeV6J4NHqc3fij/pvJaOuhwhYXgDvV5vFmn14evqw7nNKpF9cgH362pXN/1fg/YgCsqrrXr+VSLPxePLOVuQr8I5E/X/jP6JOxH9EnYj/iDoR/xF1Iv4aospYgtaX83HeFFm5OcJu9U1t57+DJz1ClJEXmykIuSFUnINhLcibHJTz5oOhSTFzAwGbG6SFoel5mjBIjZf1f3Cmvs1w8PyUAZAZgJaGbq4Bv7h8VVYNse4oELUCShL2TLgAbe/vCFH88FQK6K3HlMA1rURMjHIyYIp1EhJFSmYhzg6SpZk9EBvt0DR9n9wS6PgxzSRn4UZyjnwpvMJWYC5t388WjhUowTJgfHvvWZwoMgGOCDCiiPI3CCiIvxH5kWZiBkzyLVNnnCCTHyOlWu6Tu4A5gRtZObUmCVhgf4E3Kgtwloc538wCgvLUo0nteoolwpeTLixFmiV1GYLMDoCfOLkTLaEKiRJnKrTt1Ge3IABj66AXS7sPPvFFU2IJodBGGQh0M6HQTYzIk4OQ5th3UkkNQC4HyEozCDlLJuzPYseShPjRdP5U+RtV0jk/iVeE3Knk6AtJy7GOchuI5UJcpAQULp2EMc9jrh4YCfARozDjNwMXvG0vHMnVJR8EkLBxkyRgLW47FxG/E94pzUnEvDCnfhi64WTBpAURLSr3PR+ZGxBgP3p792NBiEObLHGGAlcN0ihYRnJg09zckNymGciVLGJ5aC6DzGJZfyLFAdAEJr4k5VSfZAyImRVuSDMMA8sii4ntL8NFVhMV8YfkA94kzIRfmZUsQ2+SNkQd7HpaFCmGYpjYBBHVCAYEy5op0uI16skYGERW3x5p4/1SrNMk1s4zq78aUPgXwFFkChTxR9P4O7Gk0xuX89P4jrJsakCWHY2KsQ7FlJXiW2AYwDE0MVrIv+BX4gCqiQWDxT+qif349uo4f43W+9vxH1En4j+iTsR7FlX+vwYBbp3p/R8OIPH/B4wApTV11ZM+AAAAAElFTkSuQmCC" alt="MER">
                 <p>Herramientas de modelado de datos</p>
                 <p>dependiendo del modelo de datos modelaremos los datos a ocupar</p>
-                <h4>Proceso KDD</h4>
+                <h4>Proceso KDD y mineria de datos</h4>
+                <p>CRISP es el acrónimo de Cross-Industry Standard Process for Data Mining, que se refiere a un proceso estándar que se utiliza para realizar minería de datos en una variedad de contextos empresariales.</p>            
+                <div>
+                <img src="http://www.iic.uam.es/wp-content/uploads/2021/11/CRISP-DM.jpg" alt="CRISP-DM">
+                <p>Por su parte, KDD es el acrónimo de Knowledge Discovery in Databases, que se refiere al proceso de identificación y extracción de patrones y relaciones útiles en grandes conjuntos de datos. Este proceso se basa en cuatro etapas clave:</p>
+                <img src="https://www.researchgate.net/publication/268687479/figure/fig1/AS:392084155584525@1470491555876/Figura-2-El-proceso-KDD-CRISP-DM-por-su-parte-corresponde-a-una-metodologia-que.png" alt="KDD">
+                </div>
+                <p></p>
                 <h4>Visualizacion y storytelling</h4>
                 <h4>Regla de los Tableros</h4>
+                <h5>Costo < Beneficio!</h5>
                 <h3>Diferencias entre AI, Redes Neuronales, Lenguaje Natural, Modelos Predictivos</h3>
                 <p>Simplemente todo se reduce a matematicas y repeticiones</p>
                 <h2>Limitaciones teoricas en data analitics, Data Science, y Business Intelligence</h2>
@@ -509,12 +533,33 @@
             </section>
             <section id="futuro">
                 <h1>Que viene para el futuro y como nos preparamos</h1>
-                <h2>Deep Fake y reconocimiento Facial</h2>
-                <h2></h2>
-                <h2>AI y Promp engineering</h2>
+                <h2 id="Data">Data Analitics</h2>
+                <p>Mayor uso de tecnologías de inteligencia artificial y aprendizaje automático para analizar datos a gran escala y extraer información valiosa de forma más rápida y eficiente.</p>
+                <p>Mayor utilización de datos en tiempo real y análisis en tiempo real para tomar decisiones rápidas y responder a situaciones cambiantes en tiempo real.</p>
+                <p>Mayor adopción de la ciencia de datos en una variedad de campos y sectores, desde la salud y la ciencia hasta la política y el entretenimiento.</p>
+                <p>Mayor interconexión y colaboración entre diferentes fuentes de datos, lo que permitirá un análisis más completo y preciso.</p>
+                <p>Mayor énfasis en la privacidad y la seguridad de los datos, lo que llevará a la adopción de nuevas tecnologías y prácticas para proteger la información personal y garantizar el cumplimiento de las leyes y regulaciones.</p>
+                <h2 id="Mundo">Mundo TI en general</h2>
+                <h3>Las AI se toman el mundo</h3>
+                <img src="res\AiCamilaEnojada.png" alt="aiCamila">
+                <img src="res\AiCamilaNorman.png" alt="aicamila2">
+                <img src="res\AiCode.png" alt="aicamila3">
+                <img src="res\AiComoGenerarUnMillondeUSD.png" alt="aicamila4">
+                <img src="res\AiEspañol.png" alt="ai3">
+                <p>Cuanto de esta presentacion fue escrita por una AI??</p>
+                <h2 id="CiberseguridadE">Ciberseguridad</h2>
+                <p>Las AI Malas</p>
+                <p>Desafios en reconcimiento facial Deep Fake, que pasa con los PEP</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Wrald_EZgDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mPU0WNUzsBo?start=97" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <video id="webcam" autoplay></video>
             </section>
             <section id="Recomendaciones">
                 <h1>Recomendaciones para seguir aprendiendo</h1>
+                <h2>SQL</h2>
+                <h2>PowerBi</h2>
+                <h2>TI General</h2>
                 <p>http://basujindal.me/ Mente detras de StableDifussion 2</p>
                 <p>https://www.elementsofai.com/</p>
                 <p>https://www.classcentral.com/</p>
@@ -525,6 +570,11 @@
                     GPEN,GWAPT GIAC certifies penetration tester mas la de negocio CISA</p>
                 <p>Electronica http://lushprojects.com/ y https://docs.arduino.cc/arduino-cloud/</p>
                 <p>https://losapuntesdemajo.vercel.app/ y https://www.fullstack.cafe/</p>
+                <p>https://underc0de.org/foro/</p>
+                <p>https://antrax-labs.org/</p>
+                <p>https://www.adslzone.net/reportajes/internet/mejores-buscadores-deep-web/ dark web coosas</p>
+
+            
             </section>    
         </body>
 
